@@ -16,8 +16,10 @@ function paintToDo(text) {
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = toDos.length + 1;
-  delBtn.innerText = "❌";                              
+  delBtn.innerText = "❌";      
+  delBtn.className = "toDo__button";                        
   delBtn.addEventListener("click", deleteToDo)
+  span.className = "toDo";
   span.innerText = text;
   li.appendChild(delBtn);
   li.appendChild(span);

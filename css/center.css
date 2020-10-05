@@ -1,0 +1,32 @@
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center .form {
+  appearance: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.center .form::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.center .form:focus,
+.center .form:active {
+  outline: none;
+}
+
+.center .greetings {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.center .name {
+  margin-bottom: 30px;
+}
